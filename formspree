@@ -1,0 +1,14 @@
+<form action="https://formspree.io/f/https://formspree.io/f/mwpnwown" method="POST">
+  <!-- User text input -->
+  <label for="userText">Your Message:</label><br>
+  <input type="text" id="userText" name="userText" required style="padding:8px; width:300px; border-radius:6px; border:1px solid #ccc;"><br><br>
+
+  <!-- Email input (optional but useful if you wanna reply) -->
+  <label for="email">Your Email:</label><br>
+  <input type="email" id="email" name="email" required style="padding:8px; width:300px; border-radius:6px; border:1px solid #ccc;"><br><br>
+
+  <!-- Submit button -->
+  <button type="submit" style="padding:10px 20px; border:none; border-radius:6px; background:#24292f; color:#fff; cursor:pointer;">
+    Send
+  </button>
+</form>
