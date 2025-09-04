@@ -1,14 +1,62 @@
-<form action="https://formspree.io/f/https://formspree.io/f/mwpnwown" method="POST">
-  <!-- User text input -->
-  <label for="userText">Your Message:</label><br>
-  <input type="text" id="userText" name="userText" required style="padding:8px; width:300px; border-radius:6px; border:1px solid #ccc;"><br><br>
-
-  <!-- Email input (optional but useful if you wanna reply) -->
-  <label for="email">Your Email:</label><br>
-  <input type="email" id="email" name="email" required style="padding:8px; width:300px; border-radius:6px; border:1px solid #ccc;"><br><br>
-
-  <!-- Submit button -->
-  <button type="submit" style="padding:10px 20px; border:none; border-radius:6px; background:#24292f; color:#fff; cursor:pointer;">
-    Send
-  </button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Box</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f8f9fa;
+      margin: 0;
+    }
+    .search-container {
+      text-align: center;
+    }
+    h1 {
+      font-size: 32px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      width: 400px;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      font-size: 16px;
+      outline: none;
+    }
+    button {
+      margin-left: 10px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 25px;
+      background-color: #4285f4;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3367d6;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <h1>My Search</h1>
+    <form action="https://formsubmit.co/vishnusuresh2406@gmail.com" method="POST">
+      <input type="text" name="search_query" placeholder="Type your search..." required>
+      
+      <!-- Hidden fields -->
+      <input type="hidden" name="_next" value="https://yourwebsite.github.io/thankyou.html">
+      <input type="hidden" name="_captcha" value="false">
+      
+      <button type="submit">Search</button>
+    </form>
+  </div>
+</body>
+</html>
