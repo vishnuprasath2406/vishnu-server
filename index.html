@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Login</title>
+  <style>
+    /* Page layout */
+    :root { --bg:#f6f7fb; --card:#ffffff; --accent:#c7161a; --text:#222; --muted:#666; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    /* Card */
+    .card {
+      width: 100%;
+      max-width: 380px;
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.08);
+      padding: 24px 24px 28px;
+    }
+
+    /* Logo */
+    .logo-wrap {
+      display: grid;
+      place-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      text-align: center;
+    }
+    .logo-wrap img {
+      width: 88px;
+      height: 88px;
+      object-fit: contain;
+      border-radius: 50%;
+      background: #fff;
+    }
+    .logo-title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    /* Form */
+    form { display: grid; gap: 14px; }
+    label {
+      font-size: 14px;
+      color: var(--muted);
+      margin-bottom: 4px;
+      display: inline-block;
+    }
+    .field {
+      display: grid;
+      gap: 6px;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 12px 12px;
+      border: 1px solid #e3e5ea;
+      border-radius: 8px;
+      font-size: 15px;
+      outline: none;
+      transition: border-color .2s, box-shadow .2s;
+      background: #fff;
+    }
+    input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(199,22,26,.12);
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 4px;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .btn {
+      appearance: none;
+      border: 0;
+      padding: 12px 16px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      width: 100%;
+      transition: filter .2s, transform .02s;
+    }
+    .btn:active { transform: translateY(1px); }
+    .link {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .remember {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    /* Small screens */
+    @media (min-width: 420px) {
+      .btn { width: auto; }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo-wrap">
+      <!-- Replace the src below with the provided college logo file path -->
+      <img src="logo.png" alt="College Logo" />
+      <div class="logo-title">Login</div>
+    </div>
+
+    <form action="#" method="post" autocomplete="on">
+      <div class="field">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" placeholder="Enter username" required />
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" placeholder="Enter password" required />
+      </div>
+
+      <div class="actions">
+        <label class="remember">
+          <input type="checkbox" name="remember" />
+          Remember me
+        </label>
+        <a class="link" href="#">Forgot password?</a>
+      </div>
+
+      <div style="margin-top:12px;">
+        <button class="btn" type="submit">Log in</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
