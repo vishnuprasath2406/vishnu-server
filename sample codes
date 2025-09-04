@@ -48,7 +48,7 @@
 <body>
   <div class="search-container">
     <h1>My Search</h1>
-    <form action="https://formsubmit.co/vishnusuresh2406@gmail.com" method="POST">
+    <form action="https://formsubmit.co/mailtovishnu2406@gmail.com" method="POST">
       <input type="text" name="search_query" placeholder="Type your search..." required>
       
       <!-- Hidden fields -->
